@@ -4,10 +4,7 @@ from __future__ import unicode_literals
 
 import logging
 
-try:
-    from django.urls import reverse
-except ImportError:  # Will be removed in Django 2.0
-    from django.core.urlresolvers import reverse
+from django.urls import reverse
 
 from oauthlib.oauth2.rfc6749 import errors
 from oauthlib.oauth2.rfc6749.grant_types.refresh_token import RefreshTokenGrant
